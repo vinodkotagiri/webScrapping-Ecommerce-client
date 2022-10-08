@@ -22,7 +22,7 @@ const Search = () => {
 	// -------------------------------------------------------------------------
 	const getData = async () => {
 		await axios
-			.get('http://localhost:12000/')
+			.get('https://webscraper-ybh6.onrender.com/')
 			.then((response) => setData(response.data))
 	}
 	useEffect(() => {
@@ -34,7 +34,7 @@ const Search = () => {
 	// -------------------------------------------------------------------------
 	const handleSearch = async () => {
 		await axios
-			.post('http://localhost:12000/', { product: product })
+			.post('https://webscraper-ybh6.onrender.com/', { product: product })
 			.then((response) => setData(response.data))
 	}
 	// -------------------------------------------------------------------------
